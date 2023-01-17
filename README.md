@@ -12,7 +12,7 @@ cd watson-nlp-example-local-docker/code
 ### Step 2:  Set your IBM_ENTITLEMENT_KEY in the `.env` file
 
 ```sh
-cat .env-template > .env
+cat .env_template > .env
 ```
 
 Edit the `.env` file.
