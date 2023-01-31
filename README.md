@@ -7,6 +7,11 @@ This is an example about, how to use Watson NLP based on the official example do
 
 ## Pretrained models
 
+* Step 1: Clone the example project to your local computer
+* Step 2:  Set your IBM_ENTITLEMENT_KEY in the `.env` file
+* Step 3: Execute the `run-watson-nlp-with-docker.sh` bash script
+* Step 4: Verify running Watson NLP container
+
 ### Step 1: Clone the example project to your local computer
 
 ```sh
@@ -121,10 +126,16 @@ We executed the syntac predict [v1/watson.runtime.nlp.v1/NlpService/SyntaxPredic
 
 ## Custom model and pretrained models
 
+* Step 1: Step 1: Follow the steps to create a custom classification model
+* Step 2: Clone the example project to your local computer
+* Step 3: Set your IBM_ENTITLEMENT_KEY in the `.env` file
+* Step 4: Copy the created model
+* Step 5: Execute the `run-watson-nlp-with-dockerfile.sh` bash script
+* Step 6: Open a new terminal and insert following `curl` command
+
 ### Step 1: Follow the steps to create a custom classification model
 
-Visit the [Customize a classification model for Watson NLP for Embed](https://github.com/thomassuedbroecker/watson-nlp-custom-model#customize-a-classification-model-for-watson-nlp-for-embed)
-
+> Visit the [Customize a classification model for Watson NLP for Embed](https://github.com/thomassuedbroecker/watson-nlp-custom-model#customize-a-classification-model-for-watson-nlp-for-embed)
 
 ### Step 2: Clone the example project to your local computer
 
@@ -133,7 +144,7 @@ git clone https://github.com/thomassuedbroecker/watson-nlp-example-local-docker
 cd watson-nlp-example-local-docker/code
 ```
 
-### Step 3:  Set your IBM_ENTITLEMENT_KEY in the `.env` file
+### Step 3: Set your IBM_ENTITLEMENT_KEY in the `.env` file
 
 ```sh
 cat .env_template > .env
@@ -154,7 +165,7 @@ Ensure you copied the your custom model to this folder.
 code/app/custom_models
 ```
 
-### Step 5: Execute the `run-watson-nlp-with-docker.sh` bash script
+### Step 5: Execute the `run-watson-nlp-with-dockerfile.sh` bash script
 
 ```sh
 sh run-watson-nlp-with-dockerfile.sh
