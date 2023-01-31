@@ -6,6 +6,8 @@
 terraform.tfstate
 terraform.tfstate.backup
 terraform.tfvars
+/code/app/custom_models/ensemble_model
+/code/app/models/
 
 # Logs
 logs
@@ -144,3 +146,4 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
