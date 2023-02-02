@@ -6,6 +6,8 @@
 terraform.tfstate
 terraform.tfstate.backup
 terraform.tfvars
+code/app/custom_models/ensemble_model_old
+code/app/custom_models/backup/ensemble_model_old
 /code/app/custom_models/ensemble_model
 /code/app/models/
 
