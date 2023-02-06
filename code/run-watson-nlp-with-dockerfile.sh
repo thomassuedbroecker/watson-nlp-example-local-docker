@@ -7,6 +7,7 @@ source ./.env
 IMAGE_REGISTRY="cp.icr.io/cp/ai"
 RUNTIME_IMAGE="watson-nlp-runtime"
 WATSON_NLP_TAG="1.0.20"
+#WATSON_NLP_TAG="1.0.18"
 export WATSON_RUNTIME_BASE="$IMAGE_REGISTRY/$RUNTIME_IMAGE:$WATSON_NLP_TAG"
 export MODELS="${MODELS:-"watson-nlp_syntax_izumo_lang_en_stock:1.0.7,watson-nlp_syntax_izumo_lang_fr_stock:1.0.7"}"
 RUNTIME_CONTAINER_NAME=watson-nlp-with-custom-models
@@ -16,7 +17,7 @@ DOWNLOAD_IMAGE=alpine
 
 ######### Create custom Watson NLP image ##############
 CUSTOM_WATSON_NLP_IMAGE_NAME=watson-nlp-runtime-with-custom-models
-CUSTOM_TAG=1.0.0
+CUSTOM_TAG=1.0.2
 
 # **********************************************************************************
 # Functions definition
@@ -61,6 +62,7 @@ function downloadThePretrainedModels() {
     echo "# ******"
     echo ""
 
+    HOME_TMP=$(pwd)
     mkdir $(pwd)/$TEMP_MODEL_DIR
 
     echo "# 1. Run a container in an interactive mode to set the permissions"

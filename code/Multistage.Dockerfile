@@ -22,5 +22,5 @@ RUN true && \
     mkdir -p /app/models
 
 ENV LOCAL_MODELS_DIR=/app/models
-COPY --from=pretrained app/models /app/models
+# COPY --from=pretrained app/models /app/models
 COPY --from=custom app/models /app/models

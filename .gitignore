@@ -10,6 +10,33 @@ code/app/custom_models/ensemble_model_old
 code/app/custom_models/backup/ensemble_model_old
 /code/app/custom_models/ensemble_model
 /code/app/models/
+code/app/custom_models/ensemble_model.zip
+code/app/custom_models/backup/ensemble_model_01
+backup/ensemble_model_01
+backup/ensemble_model_02
+backup/ensemble_model_old
+code/app/custom_models/ensemble_model_custom
+code/app/custom_models/emsemble_model/cnn_model/config.yml
+code/app/custom_models/emsemble_model/cnn_model/artifacts/embedding.pb
+code/app/custom_models/emsemble_model/cnn_model/artifacts/model.h5
+code/app/custom_models/emsemble_model/ensemble_model/config.yml
+code/app/custom_models/emsemble_model/stopwords/config.yml
+code/app/custom_models/emsemble_model/stopwords/artifacts/stopwords.txt
+code/app/custom_models/emsemble_model/syntax_model/config.yml
+code/app/custom_models/emsemble_model/tf_idf_model/config.yml
+code/app/custom_models/emsemble_model/tf_idf_model/artifacts/tfidf_vectorizer.pkl
+code/app/custom_models/emsemble_model/tf_idf_svm_model/config.yml
+code/app/custom_models/emsemble_model/tf_idf_svm_model/artifacts/svm.pkl
+code/app/custom_models/emsemble_model/use_model/config.yml
+code/app/custom_models/emsemble_model/use_model/universal-sentence-encoder_4/saved_model.pb
+code/app/custom_models/emsemble_model/use_model/universal-sentence-encoder_4/variables/variables.data-00000-of-00001
+code/app/custom_models/emsemble_model/use_model/universal-sentence-encoder_4/variables/variables.index
+code/app/custom_models/emsemble_model/use_svm_model/config.yml
+code/app/custom_models/emsemble_model/use_svm_model/artifacts/svm.pkl
+code/app/custom_models/emsemble_model/config.yml
+backup/ensemble_model
+backup/my-custom-watson-nlp-model
+backup/ensemble_model_custom.zip
 
 # Logs
 logs
