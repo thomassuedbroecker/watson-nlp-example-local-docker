@@ -37,6 +37,7 @@ code/app/custom_models/emsemble_model/config.yml
 backup/ensemble_model
 backup/my-custom-watson-nlp-model
 backup/ensemble_model_custom.zip
+code/.env_custom
 
 # Logs
 logs
@@ -175,4 +176,5 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
 

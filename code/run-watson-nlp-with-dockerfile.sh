@@ -7,7 +7,6 @@ source ./.env
 IMAGE_REGISTRY="cp.icr.io/cp/ai"
 RUNTIME_IMAGE="watson-nlp-runtime"
 WATSON_NLP_TAG="1.0.20"
-#WATSON_NLP_TAG="1.0.18"
 export WATSON_RUNTIME_BASE="$IMAGE_REGISTRY/$RUNTIME_IMAGE:$WATSON_NLP_TAG"
 export MODELS="${MODELS:-"watson-nlp_syntax_izumo_lang_en_stock:1.0.7,watson-nlp_syntax_izumo_lang_fr_stock:1.0.7"}"
 RUNTIME_CONTAINER_NAME=watson-nlp-with-custom-models

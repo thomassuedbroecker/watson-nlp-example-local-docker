@@ -1,21 +1,22 @@
 #!/bin/bash
 
 # **************** Global variables
-source ./.env
+source ./.env_custom
 
 # Information
 IMAGE_REGISTRY="cp.icr.io/cp/ai"
 RUNTIME_IMAGE="watson-nlp-runtime"
 WATSON_NLP_TAG="1.0.20"
-#WATSON_NLP_TAG="1.0.18"
 export WATSON_RUNTIME_BASE="$IMAGE_REGISTRY/$RUNTIME_IMAGE:$WATSON_NLP_TAG"
 RUNTIME_CONTAINER_NAME=watson-nlp-with-custom-models
 MODEL_CONTAINERS_NAME=watson-nlp-custom-models
 TEMP_MODEL_DIR=models
+RUNTIME_CONTAINER_NAME=watson-nlp-with-models
+MODEL_CONTAINERS_NAME=watson-nlp-models
 
 ######### Create custom Watson NLP image ##############
-CUSTOM_WATSON_NLP_IMAGE_NAME=watson-nlp-runtime-with-custom-models
-CUSTOM_TAG=1.0.0
+CUSTOM_WATSON_NLP_IMAGE_NAME=watson-nlp-custom-container
+CUSTOM_TAG=v1.0.0
 
 # **********************************************************************************
 # Functions definition
@@ -40,7 +41,7 @@ function createCustomContainerImageLocally () {
     echo "# ******"
     echo ""
     echo "Image name: $CUSTOM_WATSON_NLP_IMAGE_NAME"
-    docker build --build-arg WATSON_RUNTIME_BASE="$WATSON_RUNTIME_BASE" ./Multistage.Dockerfile -t "$CUSTOM_WATSON_NLP_IMAGE_NAME":"$CUSTOM_TAG"
+    docker build --build-arg WATSON_RUNTIME_BASE="$WATSON_RUNTIME_BASE" -f ./Multistage.Dockerfile -t "$CUSTOM_WATSON_NLP_IMAGE_NAME":"$CUSTOM_TAG"
 }
 
 function runNLPwithCustomModels () {
