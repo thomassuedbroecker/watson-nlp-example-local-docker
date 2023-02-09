@@ -8,7 +8,7 @@ This is an example about, how to use Watson NLP based on the official example do
 ## Pretrained models
 
 * Step 1: Clone the example project to your local computer
-* Step 2:  Set your IBM_ENTITLEMENT_KEY in the `.env` file
+* Step 2: Set your IBM_ENTITLEMENT_KEY in the `.env` file
 * Step 3: Execute the `run-watson-nlp-with-docker.sh` bash script
 * Step 4: Verify running Watson NLP container
 
